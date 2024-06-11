@@ -1,6 +1,5 @@
 "use strict";
-// implicit shown the using string
-// let myName: String
+// implicit shown the using string// let myName: String
 // explicitly shown the type of the variables
 let myName = 'Dhanush';
 console.log(myName);
@@ -29,3 +28,20 @@ const result = sum(10, 20);
 console.log(result);
 // type regExp
 let regularExpression = /\w+/g;
+let a = 34;
+let b = 'Dhanush';
+let c = false;
+let d = ['hello', 'world'];
+// any => enum
+const colorRed = 0;
+const colorBlue = 1;
+const colorGreen = 2;
+// javascript does not support enum keyword it will be used by array in js it will be complex but js easy
+var color;
+(function (color) {
+    color[color["Red"] = 101] = "Red";
+    color[color["Blue"] = 102] = "Blue";
+    color[color["Green"] = 103] = "Green";
+})(color || (color = {}));
+let bgColor = color.Red;
+console.log(bgColor);
